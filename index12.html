@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Природа Кубани — животные, птицы, растения</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index12.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="description" content="Природа Кубани: животные, птицы, растения Краснодарского края. Фото, описание, карта обитания, красная книга.">
+    <meta name="keywords" content="Кубань, природа, животные, птицы, растения, Краснодарский край, красная книга">
+    <meta property="og:title" content="Природа Кубани">
+    <meta property="og:description" content="Уникальный мир флоры и фауны Краснодарского края">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+<div class="progress-container"><div class="progress-bar"></div></div>
+
+<!-- ШАПКА -->
+<div class='men'>
+    <div class='nav'>
+        <div class="logo">🌿 KUBAN</div>
+        <div class='knop'><a href="#glav">Главная</a></div>
+        <div class='knop'><a href="#prod">Природа</a></div>
+        <div class='knop'><a href="#nas">О нас</a></div>
+        <div class='knop'><a href="#cont">Контакты</a></div>
+    </div>
+</div>
+
+<!-- КАРУСЕЛЬ С ФОТОГРАФИЯМИ ЖИВОТНЫХ И ПТИЦ КУБАНИ -->
+<div class="carousel-container">
+    <div class="carousel">
+        <div class="carousel-inner" id="carouselInner">
+            <!-- ЖИВОТНЫЕ -->
+            <div class="carousel-slide">
+                <img src="https://good-nature-blog-uploads.s3.amazonaws.com/uploads/2023/09/9.jpg" alt="Бурый медведь">
+                <div class="carousel-caption">🐻 Бурый медведь — до 500 особей</div>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://www.kavkazzapoved.ru/sites/default/files/animals_custody/2024/image%207_4.png" alt="Кавказский волк">
+                <div class="carousel-caption">🐺 Кавказский волк — длина до 120 см</div>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://i.ytimg.com/vi/eL5-0h-D4NU/maxresdefault.jpg" alt="Кабан">
+                <div class="carousel-caption">🐗 Кабан — вес до 250 кг</div>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://admtyumen.ru/images/thumbnails/1000_1000/t_f42518c59e15bfc591a6bd8b8b1fa3c0_body.jpg" alt="Лисица">
+                <div class="carousel-caption">🦊 Лисица — степная зона</div>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://cdnstatic.rg.ru/uploads/images/2025/07/15/e3507a70ea576971597936400_668.jpeg" alt="Переднеазиатский леопард">
+                <div class="carousel-caption">🐆 Леопард — восстанавливается в заповеднике</div>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://avatars.mds.yandex.net/i?id=c4f6b9bdcb39538cc2218b5d8348ea69_l-4874404-images-thumbs&n=13" alt="Благородный олень">
+                <div class="carousel-caption">🦌 Благородный олень — гордость лесов</div>
+            </div>
+            <!-- ПТИЦЫ -->
+            <div class="carousel-slide">
+                <img src="https://i.ytimg.com/vi/PhUDZ0c_l9M/maxresdefault.jpg" alt="Кавказский тетерев">
+                <div class="carousel-caption">🦅 Кавказский тетерев — Красная книга</div>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://avatars.mds.yandex.net/i?id=459cd9db260ea22fc96536ef8d399406_l-5282838-images-thumbs&n=13" alt="Филин">
+                <div class="carousel-caption">🦉 Филин — размах крыльев до 1,5 м</div>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://images.news.ru/photo/573a72d2-667d-11e9-8236-fa163e074e61_1200.jpg" alt="Кудрявый пеликан">
+                <div class="carousel-caption">🐦 Кудрявый пеликан — дельта Кубани</div>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://ic.pics.livejournal.com/vgannaa/11659803/10661991/10661991_1000.jpg" alt="Колпица">
+                <div class="carousel-caption">🐧 Колпица — клюв-лопатка</div>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://content.foto.my.mail.ru/mail/punkt-a/2888/h-3436.jpg" alt="Каравайка">
+                <div class="carousel-caption">🕊️ Каравайка — изогнутый клюв</div>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://zelokruga.ru/upload/resize_cache/iblock/bac/28s91hvvis0565aqdb1a7lk686er9iud/1200_630_2/seraya-utka2.jpg" alt="Серая утка">
+                <div class="carousel-caption">🦆 Серая утка — обитает на лиманах</div>
+            </div>
+        </div>
+        <div class="carousel-buttons">
+            <button class="carousel-btn" id="prevBtn">◀</button>
+            <button class="carousel-btn" id="nextBtn">▶</button>
+        </div>
+    </div>
+</div>
+
+<!-- ОСНОВНОЙ КОНТЕНТ -->
+<div class="wraper">
+    <main class="a">
+        <div class="site-content">
+            <span id="glav" class="anchor"></span>
+            <h1 class="zagolovok">Природа Кубани: животные, птицы и растения</h1>
+            <span class="text_date">📅 Размещено: 17.04.2026</span>
+            <p class="otstup">Краснодарский край — уникальный регион с богатейшей флорой и фауной. Мягкий субтропический климат, два тёплых моря, горы и степи создали дом для тысяч видов животных и растений.</p>
+
+            <span id="prod" class="anchor"></span>
+            <h2 class="zagolovok">🐻 Животные Кубани</h2>
+            <div class="animals-grid">
+                <div class="animal-card"><div class="animal-icon">🐻</div><div class="animal-name">Бурый медведь</div><p>🐻 Вес до 300 кг, длина до 2 м. Обитает в горно-лесной зоне. Питается ягодами, рыбой, орехами. На Кубани — более 500 особей. Не исчезающий, но численность контролируется. Интересно: медведи на Кубани редко нападают на людей.</p></div>
+                <div class="animal-card"><div class="animal-icon">🐺</div><div class="animal-name">Кавказский волк</div><p>🐺 Вес до 50 кг, длина до 120 см. Обитает в горных лесах и предгорьях. Охотится на оленей, кабанов, зайцев. Имеет густой тёмно-серый мех.</p></div>
+                <div class="animal-card"><div class="animal-icon">🐗</div><div class="animal-name">Кабан</div><p>🐗 Вес до 250 кг. Обитает в дубовых и буковых лесах. Всеяден: желуди, коренья, мелкие животные. Встречается по всему краю, кроме высокогорий. Кабаны очень умны и запоминают опасные места.</p></div>
+                <div class="animal-card"><div class="animal-icon">🦊</div><div class="animal-name">Лисица</div><p>🦊 Вес до 10 кг. Степная и лесостепная зоны. Питается мышами, птицами, ягодами. Активна в сумерках и ночью.</p></div>
+                <div class="animal-card"><div class="animal-icon">🐆</div><div class="animal-name">Переднеазиатский леопард</div><p>🐆 Вес до 70 кг. Редчайший хищник, восстанавливается в Кавказском заповеднике. Питается косулями и кабанами. В 2020 году выпущены первые особи в рамках программы реинтродукции.</p></div>
+                <div class="animal-card"><div class="animal-icon">🦌</div><div class="animal-name">Благородный олень</div><p>🦌 Вес до 250 кг. Гордость лесов Кубани. Обитает в горно-лесной зоне, питается травой и листьями. У самцов красивые ветвистые рога, которые обновляются каждый год.</p></div>
+            </div>
+
+            <span id="pticy" class="anchor"></span>
+            <h2 class="zagolovok">🦅 Птицы Кубани</h2>
+            <div class="animals-grid">
+                <div class="animal-card"><div class="animal-icon">🦅</div><div class="animal-name">Кавказский тетерев</div><p>🦅 Размах крыльев до 80 см. Обитает в высокогорье, в Красной книге РФ. Отличается чёрным оперением и ярко-красными бровями.</p></div>
+                <div class="animal-card"><div class="animal-icon">🦉</div><div class="animal-name">Филин</div><p>🦉 Размах крыльев до 1,5 м. Ночной хищник, обитает в лесах и скалах. Питается грызунами и мелкими птицами. Один из крупнейших ночных хищников.</p></div>
+                <div class="animal-card"><div class="animal-icon">🐦</div><div class="animal-name">Кудрявый пеликан</div><p>🐦 Размах крыльев до 3 м. Гнездится в дельте Кубани и на лиманах Азовского моря. Питается рыбой. Клюв длиной до 40 см. Находится под угрозой исчезновения.</p></div>
+                <div class="animal-card"><div class="animal-icon">🐧</div><div class="animal-name">Колпица</div><p>🐧 Размах крыльев до 1,2 м. Обитает в плавнях дельты Кубани. Узнаваема по необычному клюву-лопатке для процеживания воды. Редкий вид.</p></div>
+                <div class="animal-card"><div class="animal-icon">🕊️</div><div class="animal-name">Каравайка</div><p>🕊️ Водоплавающая птица с длинным изогнутым клювом. Гнездится на лиманах. Питается мелкими рачками.</p></div>
+                <div class="animal-card"><div class="animal-icon">🦆</div><div class="animal-name">Серая утка</div><p>🦆 Обычный обитатель плавней и лиманов. Гнездится у водоёмов по всему краю.</p></div>
+            </div>
+
+            <strong class="otstup">Где и кого можно встретить:</strong>
+            <ul class="ptica">
+                <li><strong>Кудрявый пеликан</strong> 🐦 — дельта Кубани, лиманы Азовского моря</li>
+                <li><strong>Колпица</strong> 🐧 — плавни дельты Кубани</li>
+                <li><strong>Каменный дрозд</strong> 🐦 — горные районы, скалы</li>
+                <li><strong>Орел-карлик</strong> 🦅 — предгорья и степные зоны</li>
+                <li><strong>Кваква</strong> 🐦 — ночная цапля, обитает в плавнях и камышовых зарослях</li>
+            </ul>
+            <p class="otstup">Из насекомых опасны: нарывник, паук-волк, клещи, кольчатая сколопендра, южнорусский тарантул.</p>
+
+            <span id="rasteniya" class="anchor"></span>
+            <h2 class="zagolovok">🌳 Растительный мир</h2>
+            <p class="otstup">Более 3000 видов растений: дубы, пихты, ели, буки, груша, грецкий орех, можжевельник, тис ягодный (живёт до 2000 лет!), фисташка туполистная. На Таманском полуострове — полынь и шалфей. В лесах растут редкие орхидеи, самшит колхидский, подснежник кавказский.</p>
+
+            <span id="ryba" class="anchor"></span>
+            <h2 class="zagolovok">🐟 Рыбы реки Кубань</h2>
+            <p class="otstup">В бассейне реки обитает более 160 видов: кубанский усач (эндемик, живёт только в Кубани), лещ, сом, судак, толстолобик, сазан, жерех, тарань, бычок, чехонь. Лучшие места для рыбалки: станица Тбилисская, Краснодарское водохранилище. Рыбалка возможна круглый год.</p>
+
+            <span id="redkaya" class="anchor"></span>
+            <h2 class="zagolovok">📖 Красная книга</h2>
+            <p class="otstup">Всего в Красной книге Кубани — более 400 видов. На грани исчезновения: кевовое дерево, белая кувшинка, кавказский тетерев, беркут, бородач. Животные: горный зубр, кавказский лесной кот, переднеазиатский леопард. Если встретили редкое животное — не трогайте, сфотографируйте и сообщите в Минприроды.</p>
+            <strong>Животные Красной книги:</strong>
+            <ul class="zivotniykr"><li>крот обыкновенный;</li><li>пятнистый олень;</li><li>дикий кабан;</li><li>кавказский волк;</li><li>бурый медведь;</li><li>белка обыкновенная;</li><li>куница;</li><li>ондатра;</li><li>шакал;</li><li>ласка;</li><li>летучая мышь.</li></ul>
+
+            <!-- КАРТА -->
+            <span id="map-anchor" class="anchor"></span>
+			<h2 class="zagolovok">🗺️ Карта обитания животных</h2>
+			<div id="map"></div>
+
+            <!-- ГАЛЕРЕЯ -->
+			<span id="gallery-anchor" class="anchor"></span>
+			<h3 class="zagolovok">🐾 Символы Кубани</h3>
+            <div class="gallery-grid">
+                <div class="gallery-card">🐻</div><div class="gallery-card">🦅</div>
+                <div class="gallery-card">🐺</div><div class="gallery-card">🦊</div>
+                <div class="gallery-card">🐟</div><div class="gallery-card">🌳</div>
+            </div>
+
+            <!-- СТАТИСТИКА -->
+			<div class="fact-cards">
+                <div class="stat-card"><div class="stat-number">500+</div><div class="stat-label">бурых медведей</div></div>
+                <div class="stat-card"><div class="stat-number">340+</div><div class="stat-label">видов птиц</div></div>
+                <div class="stat-card"><div class="stat-number">2&nbsp;млн&nbsp;га</div><div class="stat-label">лесов</div></div>
+                <div class="stat-card"><div class="stat-number">160+</div><div class="stat-label">видов рыб</div></div>
+            </div>
+
+            <!-- ЛАЙКИ -->
+            <div class="likes">
+                <button class="like-btn" id="likeBtn">👍 Нравится (<span id="likeCount">0</span>)</button>
+                <button class="like-btn" id="dislikeBtn">👎 Не нравится (<span id="dislikeCount">0</span>)</button>
+            </div>
+
+            <div class="share-block">
+                <span>📤 Поделиться статьёй:</span>
+                <a href="https://t.me/share/url?url=https://твой-сайт.ru" target="_blank" class="share-tg">Telegram</a>
+                <a href="https://vk.com/share.php?url=https://твой-сайт.ru" target="_blank" class="share-vk">VK</a>
+                <a href="https://wa.me/?text=https://твой-сайт.ru" target="_blank" class="share-wa">WhatsApp</a>
+            </div>
+			
+			<span id="nas" class="anchor"></span>
+			<h2 class="zagolovok">🌿 О нас</h2>
+			<div class="about-section">
+    			<p><strong>«Природа Кубани»</strong> — это информационный проект, созданный для всех, кто интересуется уникальной природой Краснодарского края.</p>
+    
+    			<p>Наша цель — рассказать о богатстве флоры и фауны региона, познакомить с редкими и исчезающими видами, а также помочь туристам и местным жителям лучше понять и полюбить природу Кубани.</p>
+    
+    			<p>Мы собираем достоверную информацию из открытых источников, научных публикаций и наблюдений натуралистов. На сайте вы найдёте описания животных, птиц, растений и рыб, карту обитания, а также интересные факты и полезные советы.</p>
+    
+    			<p><strong>Наши задачи:</strong></p>
+    			<ul>
+        			<li>🌿 Популяризация знаний о природе Кубани</li>
+        			<li>🦅 Привлечение внимания к редким и исчезающим видам</li>
+        			<li>🏔️ Помощь в планировании экологических маршрутов</li>
+        			<li>📚 Создание удобного справочника для всех возрастов</li>
+    			</ul>
+    
+    			<p>Проект постоянно обновляется. Если вы хотите предложить материал, сообщить об ошибке или просто поделиться впечатлениями — напишите нам на почту <a href="mailto:info@kuban-nature.ru">info@kuban-nature.ru</a>.</p>
+    
+    			<p><strong>Следите за нами:</strong> мы планируем запустить Telegram-канал с ежедневными фактами о природе Кубани.</p>
+			</div>
+
+            <!-- КОНТАКТЫ -->
+            <div class="contacts-section" id="cont">
+                <h2 class="zagolovok">📞 Контакты</h2>
+                <div class="contacts-info">
+                    <p><strong>📧 Email:</strong> <a href="mailto:info@kuban-nature.ru">info@kuban-nature.ru</a></p>
+                    <p><strong>📱 Телефон:</strong> <a href="tel:+78611234567">+7 (861) 123-45-67</a></p>
+                    <p><strong>📍 Адрес:</strong> г. Краснодар, ул. Природная, д. 1</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- БОКОВАЯ ПАНЕЛЬ -->
+    <aside class="sidebar">
+        <div class="sidebar-block">
+            <div class="random-fact" id="randomFact"></div>
+            <h3>📑 Содержание</h3>
+            <ul class="sidebar-nav">
+    			<li><a href="#prod">🐻 Животные Кубани</a></li>
+    			<li><a href="#pticy">🦅 Птицы</a></li>
+    			<li><a href="#rasteniya">🌳 Растительный мир</a></li>
+    			<li><a href="#ryba">🐟 Рыбы</a></li>
+    			<li><a href="#redkaya">📖 Красная книга</a></li>
+    			<li><a href="#map-anchor">🗺️ Карта обитания</a></li>
+    			<li><a href="#gallery-anchor">🐾 Символы Кубани</a></li>
+    			<li><a href="#cont">📞 Контакты</a></li>
+			</ul>
+        </div>
+        <div class="sidebar-block">
+            <h3>🔥 Факты</h3>
+            <div class="fact">🐻 Более 500 бурых медведей</div>
+            <div class="fact">🦅 Кавказский тетерев — редчайший</div>
+            <div class="fact">🌳 2 млн гектаров лесов</div>
+        </div>
+    </aside>
+</div>
+
+<div class="up-button" id="upButton">↑</div>
+
+<!-- ПЛАВАЮЩИЙ ТАЙМЕР -->
+<div id="floatingTimer" class="floating-timer">⏱️ На сайте: 0 сек</div>
+
+<footer class="footer" id="nas">
+    <div class="footer-content">
+        <div class="footer-logo">🌿 KUBAN</div>
+        <div class="footer-links">
+            <a href="#glav">Главная</a>
+            <a href="#prod">Природа</a>
+            <a href="#nas">О нас</a>
+            <a href="#cont">Контакты</a>
+        </div>
+        <div class="footer-copy">© 2026 Природа Кубани. Все права защищены.</div>
+    </div>
+</footer>
+
+<script>
+    // КАРУСЕЛЬ
+    const carouselInner = document.getElementById('carouselInner');
+    const slides = document.querySelectorAll('.carousel-slide');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    let currentIndex = 0, autoInterval;
+    function updateCarousel() { carouselInner.style.transform = `translateX(-${currentIndex * 100}%)`; }
+    function nextSlide() { currentIndex = (currentIndex + 1) % slides.length; updateCarousel(); }
+    function prevSlide() { currentIndex = (currentIndex - 1 + slides.length) % slides.length; updateCarousel(); }
+    function startAutoSlide() { autoInterval = setInterval(nextSlide, 4000); }
+    function stopAutoSlide() { clearInterval(autoInterval); }
+    nextBtn.addEventListener('click', () => { stopAutoSlide(); nextSlide(); startAutoSlide(); });
+    prevBtn.addEventListener('click', () => { stopAutoSlide(); prevSlide(); startAutoSlide(); });
+    startAutoSlide();
+
+    // КНОПКА НАВЕРХ
+    const upBtn = document.getElementById('upButton');
+    window.addEventListener('scroll', () => upBtn.classList.toggle('show', window.scrollY > 300));
+    upBtn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    // ПЛАВНАЯ ПРОКРУТКА
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+        });
+    });
+
+    // ЛАЙКИ
+    let likes = localStorage.getItem('likes') ? parseInt(localStorage.getItem('likes')) : 31;
+    let dislikes = localStorage.getItem('dislikes') ? parseInt(localStorage.getItem('dislikes')) : 21;
+    document.getElementById('likeCount').innerText = likes;
+    document.getElementById('dislikeCount').innerText = dislikes;
+    document.getElementById('likeBtn').onclick = () => { likes++; localStorage.setItem('likes', likes); document.getElementById('likeCount').innerText = likes; };
+    document.getElementById('dislikeBtn').onclick = () => { dislikes++; localStorage.setItem('dislikes', dislikes); document.getElementById('dislikeCount').innerText = dislikes; };
+
+    // КАРТА
+    ymaps.ready(init);
+    function init() {
+        var map = new ymaps.Map('map', { center: [45.0, 39.0], zoom: 7, controls: ['zoomControl', 'fullscreenControl'] });
+        var places = [
+            { coords: [44.7, 40.0], title: '🐻 Бурый медведь', desc: 'Горно-лесная зона, 500+ особей' },
+            { coords: [43.8, 41.5], title: '🦅 Кавказский тетерев', desc: 'Высокогорье, Красная книга' },
+            { coords: [44.2, 38.8], title: '🌳 Тис ягодный', desc: 'Реликтовое растение' },
+            { coords: [45.2, 37.5], title: '🐟 Кубанский усач', desc: 'Река Кубань' },
+            { coords: [43.5, 40.0], title: '🐺 Кавказский волк', desc: 'Горные леса' },
+            { coords: [43.4, 40.5], title: '🐾 Леопард', desc: 'Кавказский заповедник' }
+        ];
+        places.forEach(p => {
+            var placemark = new ymaps.Placemark(p.coords, { balloonContentHeader: p.title, balloonContentBody: p.desc });
+            map.geoObjects.add(placemark);
+        });
+    }
+
+    // АНИМИРОВАННЫЙ СЧЁТЧИК
+    const statNumbers = document.querySelectorAll('.stat-number');
+    let originalValues = [];
+    statNumbers.forEach(el => { originalValues.push(el.innerText); });
+    function animateNumbers() {
+        statNumbers.forEach((el, idx) => {
+            const raw = originalValues[idx];
+            const isMillion = raw.includes('млн');
+            let target = parseInt(raw);
+            if (isMillion) target = 2;
+            let current = 0;
+            el.innerText = isMillion ? '0 млн га' : '0+';
+            const step = Math.ceil(target / 50);
+            const timer = setInterval(() => {
+                current += step;
+                if (current >= target) { current = target; clearInterval(timer); }
+                if (isMillion) el.innerText = current + ' млн га';
+                else el.innerText = current + '+';
+            }, 30);
+        });
+    }
+    function resetNumbers() {
+        statNumbers.forEach((el, idx) => {
+            const raw = originalValues[idx];
+            const isMillion = raw.includes('млн');
+            el.innerText = isMillion ? '0 млн га' : '0+';
+        });
+    }
+    const statsSection = document.querySelector('.fact-cards');
+    if (statsSection) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) animateNumbers();
+                else resetNumbers();
+            });
+        }, { threshold: 0.3 });
+        observer.observe(statsSection);
+    }
+
+    // ПЛАВНОЕ ПОЯВЛЕНИЕ КАРТОЧЕК
+    const cards = document.querySelectorAll('.animal-card, .stat-card, .gallery-card, .fact-card');
+    const appearObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+                appearObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+    cards.forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(30px)';
+        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        appearObserver.observe(card);
+    });
+
+    // АНИМАЦИЯ ЗАГОЛОВКОВ
+    const headers = document.querySelectorAll('.zagolovok');
+    const headerObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) entry.target.classList.add('visible');
+            else entry.target.classList.remove('visible');
+        });
+    }, { threshold: 0.2 });
+    headers.forEach(header => headerObserver.observe(header));
+
+    // АНИМАЦИЯ ФУТЕРА
+    const footer = document.querySelector('.footer');
+    const footerObserver = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) footer.classList.add('visible');
+    }, { threshold: 0.1 });
+    footerObserver.observe(footer);
+
+    // СЛУЧАЙНЫЙ ФАКТ
+    const facts = ['🐻 На Кубани 500+ бурых медведей', '🦅 Кавказский тетерев — редчайшая птица', '🌳 Леса Кубани — 2 млн гектаров', '🐟 В реке Кубань 160+ видов рыб', '🏔️ В крае 4 климатические зоны'];
+    document.getElementById('randomFact').innerHTML = '✨ ' + facts[Math.floor(Math.random() * facts.length)];
+
+    // ПЛАВАЮЩИЙ ТАЙМЕР
+    let totalSeconds = 0;
+    const timerElement = document.getElementById('floatingTimer');
+    function updateTimer() {
+        totalSeconds++;
+        const minutes = Math.floor(totalSeconds / 60);
+        const seconds = totalSeconds % 60;
+        if (timerElement) {
+            if (minutes === 0) timerElement.innerHTML = `⏱️ На сайте: ${seconds} сек`;
+            else timerElement.innerHTML = `⏱️ На сайте: ${minutes} мин ${seconds} сек`;
+        }
+    }
+    setInterval(updateTimer, 1000);
+
+    // АКТИВНЫЙ ПУНКТ ОГЛАВЛЕНИЯ
+    const sections = document.querySelectorAll('.anchor');
+    const navLinks = document.querySelectorAll('.sidebar-nav a');
+    function setActive() {
+        let current = '';
+        sections.forEach(section => { if (window.scrollY >= section.offsetTop - 150) current = section.id; });
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) link.classList.add('active');
+        });
+    }
+    window.addEventListener('scroll', setActive);
+    setActive();
+
+    // АКТИВНАЯ ССЫЛКА В ШАПКЕ
+    const headerLinks = document.querySelectorAll('.knop a');
+    function setActiveHeader() {
+        let current = '';
+        const scrollPos = window.scrollY + 150;
+        sections.forEach(section => {
+            const top = section.offsetTop;
+            const bottom = top + section.offsetHeight;
+            if (scrollPos >= top && scrollPos < bottom) current = section.id;
+        });
+        headerLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) link.classList.add('active');
+        });
+    }
+    window.addEventListener('scroll', setActiveHeader);
+    setActiveHeader();
+
+    // ПЛАВНОЕ ПОЯВЛЕНИЕ КАРТЫ
+    const mapElement = document.getElementById('map');
+    if (mapElement) {
+        const mapObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) mapElement.classList.add('visible');
+                else mapElement.classList.remove('visible');
+            });
+        }, { threshold: 0.2 });
+        mapObserver.observe(mapElement);
+    }
+</script>
+</body>
+</html>
